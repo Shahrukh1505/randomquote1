@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random quote generator</title>
+    <link rel="stylesheet" href="randomquote.css" />
+  </head>
+  <body onload="startTime(); startDate()">
+    <div class="container">
+      <div id="date"></div>
+      <div id="display"></div>
+      <div id="content">
+        <p id="quote">
+          "the people who are crazy enough to think they can change the world
+          are the ones who do." <br />- Steve Jobs
+        </p>
+      </div>
+    </div>
+    <div id="b-nav">
+      <ul>
+        <button id="gen" onclick="genQuote()">New Quote</button>
+      </ul>
+    </div>
+    <script src="randomquote.js"></script>
+  </body>
+</html>

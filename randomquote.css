@@ -1,0 +1,99 @@
+html,
+body {
+  overflow-x: hidden; /*hides the horizontal and vertical scroll bars or wraps the content in specified height and width leaving the extra content that does not fit in */
+  overflow-y: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url("https://wallpapercave.com/wp/wp2488757.jpg");
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover; /*The background image is resized to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges.*/
+  background-position: top;
+  z-index: -2;
+}
+#display {
+  /*time*/
+  color: white;
+  font-size: 2.9em;
+  top: 10px; /*Set the top edge of the positioned <div> element 10px down from the top edge of its nearest positioned ancestor:*/
+  border-bottom: thin solid;
+  padding-bottom: 20px;
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+#date {
+  color: white;
+  font-size: 1.3em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  opacity: 0.6;
+  filter: alph(opacity=60);
+}
+#content {
+  height: 45em;
+}
+p {
+  max-width: 30em;
+  color: white;
+  font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times,
+    serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin: 40px auto;
+  text-transform: lowercase;
+  line-height: 145%;
+  font-size: 2em;
+  font-variant: small-caps;
+}
+p :hover {
+  text-decoration: none;
+}
+.container {
+  padding-top: 6em;
+  text-align: center;
+}
+#b-nav {
+  padding-bottom: 5em;
+  position: fixed;
+  width: 100%;
+  bottom: 2em;
+}
+#b-nav ul {
+  margin: 0;
+  padding: 0.5em;
+  text-align: center;
+  list-style-type: none; /*The list-style-type specifies the type of list-item marker in a list.*/
+}
+#b-nav ul li {
+  display: inline;
+}
+#gen {
+  outline: none; /*An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".*/
+  padding-top: 5px;
+  text-decoration: none;
+  opacity: 0.6;
+  background-color: black;
+  color: white;
+  border: thin solid white;
+  height: 40px;
+  width: 100px;
+  border-radius: 2px;
+  transition: 0.5s;
+  padding-bottom: 5px;
+}
+#gen:hover {
+  background-color: white;
+  color: black;
+  border: thin solid black;
+  opacity: 0.8;
+}
+#date {
+  color: white;
+}
+@media screen and(max-device-width:800px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 2) and(orientation:portrait) {
+  p {
+    font-size: 1em;
+  }
+}
